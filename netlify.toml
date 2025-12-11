@@ -1,6 +1,7 @@
 [build]
+  base = "Desktop/Cursor Ai"
   command = "npm run build"
-  publish = ".next"
+  publish = "Desktop/Cursor Ai/.next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -12,7 +13,7 @@
 # Function configurations for API routes
 [functions]
   node_bundler = "esbuild"
-  included_files = ["lib/**", "app/api/**"]
+  included_files = ["Desktop/Cursor Ai/lib/**", "Desktop/Cursor Ai/app/api/**"]
 
 # Security headers
 [[headers]]
@@ -67,4 +68,3 @@
 #   EMAIL_PASS = "your-app-password"
 #   CONTACT_EMAIL = "bnsanjayxrmhs@gmail.com"
 #   NODE_ENV = "production"
-
