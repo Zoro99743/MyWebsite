@@ -1,0 +1,85 @@
+/* ===================================
+   DARKER TEXT FIX
+   Makes all text more visible and readable
+   =================================== */
+
+/* Override text color variables for better contrast */
+:root {
+    --text-primary: #ffffff !important;
+    /* Pure white for maximum contrast */
+    --text-secondary: #e2e8f0 !important;
+    /* Lighter gray for secondary text */
+    --text-muted: #cbd5e1 !important;
+    /* Brighter muted text */
+}
+
+/* Ensure all primary text is bright white */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-name,
+.section-title,
+.nav-link,
+.skill-name,
+.project-title,
+.stat-number {
+    color: #ffffff !important;
+}
+
+/* Make secondary text more visible */
+.hero-title,
+.hero-description,
+.section-description,
+.about-paragraph,
+.project-description,
+.nav-link {
+    color: #e2e8f0 !important;
+}
+
+/* Brighten muted text */
+.hero-greeting,
+.section-tag,
+.stat-label,
+.footer-tech {
+    color: #cbd5e1 !important;
+}
+
+/* Ensure gradient text is still vibrant */
+.gradient-text,
+.hero-name .name-text {
+    background: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Make form labels more visible */
+label,
+.contact-item h4 {
+    color: #ffffff !important;
+}
+
+/* Brighten placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+/* Ensure navigation text is bright */
+.navbar {
+    color: #ffffff !important;
+}
+
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Make footer text more visible */
+.footer,
+.footer p {
+    color: #e2e8f0 !important;
+}

@@ -1,0 +1,127 @@
+/* ===================================
+   PORTFOLIO SPACING & LAYOUT FIXES
+   Reduces spacing and organizes social icons
+   =================================== */
+
+/* Reduce hero section padding for tighter layout */
+.hero {
+    padding: 4rem 2rem 2rem !important;
+}
+
+/* Reduce gap between hero content and code window */
+.hero-container {
+    gap: 2.5rem !important;
+    align-items: center !important;
+}
+
+/* Add proper spacing for hero title */
+.hero-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Organize social icons in a clean row */
+.hero-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Make social icons more compact and uniform */
+.social-icon {
+    width: 44px !important;
+    height: 44px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    border-radius: 10px;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.social-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.social-icon:hover {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+/* Ensure resume button aligns with social icons */
+.btn-resume {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem !important;
+    background: var(--gradient-primary);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.btn-resume svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.btn-resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+/* Make hero name more prominent */
+.hero-name {
+    margin-bottom: 0.5rem !important;
+    line-height: 1.1;
+}
+
+/* Adjust greeting spacing */
+.hero-greeting {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+    .hero {
+        padding: 3rem 1.5rem 2rem !important;
+    }
+
+    .hero-container {
+        gap: 2rem !important;
+    }
+
+    .hero-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-links {
+        gap: 0.75rem;
+    }
+
+    .social-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .btn-resume {
+        padding: 0.65rem 1.25rem !important;
+        font-size: 0.9rem;
+    }
+}
